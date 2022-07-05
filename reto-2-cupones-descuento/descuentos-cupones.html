@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descuentos con cupones</title>
+    <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+    <div class="cupones">
+        <p>PRUEBA ESTOS CUPONES</p>
+        <span>"SONY2022"</span>
+        <span>“SONYVERANO”</span>
+        <span>“ESCUCHACONSONY”</span>
+    </div>
+    <div class="container">
+        <section class="cart">
+            <h1>Carrito de compras</h1>
+            <div class="product">
+                <div class="product__image"><img src="src/product.png" alt=""></div>
+                <div class="product__detail">
+                    <h3 class="product__detail__name">Audífonos inalámbricos con noise cancelling WH-1000XM5</h3>
+                    <span class="product__detail__marca">SONY PERU</span>
+                    <div class="count">
+                        <div class="reduce">-</div>
+                        <p>1</p>
+                        <div class="add">+</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="resume">
+            <h2>Resumen</h2>
+            <div class="resume__container">
+                <div class="cupon__discount">
+                    <input id="InputCupon" type="text" placeholder="Cupón de descuento">
+                    <button id="btnCupon" type="button" onclick="aplicarCupon();">Aplicar</button>
+                </div>
+                <p class="alerta__cupon"></p>
+                <div class="subtotal__details">
+                    <div class="subtotal">
+                        <p class="subtotal__text">Subtotal</p>
+                        <p class="subtotal__price">$1500</p>
+                    </div>
+                    <div class="discount">
+                        <p>Descuento</p>
+                        <p id="discount__price">
+                            <span id="discount__percentage">(0%)</span>
+                            <span id="discount__price__number">-$0</span>
+                            </p>
+                    </div>
+                </div>
+
+                <div class="total__price">
+                    <p>Total</p>
+                    <p>$ <span id="total__price__number">1500</span> </p>
+                </div>
+
+                <button type="button" class="btn_pagar">Pagar</button>
+            </div>
+        </section>
+    </div>
+
+    <script src="src/cupones-descuento.js"></script>
+</body>
+</html>
